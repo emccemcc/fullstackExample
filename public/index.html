@@ -1,0 +1,23 @@
+<html ng-app="myMod">
+
+<body ng-controller="myController">
+
+<!--
+<p ng-repeat ="randomStuff in randomStuff track by $index"> {{randomStuff}}</p>
+-->
+<a href="#/lyric">View Lyrics</a>
+<a href="#/myInfo">View Info</a>
+<a href="#/thingsToBuy">Items to Buy</a>
+<ng-view></ng-view>
+<!-- "lyric in randomStuff" -->
+<!-- still showing one by one for ng-repeat ="randomStuff in randomStuff track by $index" -->
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script>
+<script src="module.js"> </script>
+<script src="config.js"> </script>
+<script src="controller.js"> </script>
+</body>
+
+</html>
